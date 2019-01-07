@@ -14,7 +14,7 @@ Fare --票价
 Cabin --舱位
 Embarked --登船港口
 
-
+11111
 ```python
 #读取数据
 import pandas as pd
@@ -1033,7 +1033,7 @@ for i in range(Survived_len):
     print(SexCount)
     SexLocation = Sex_index * 1.05 + (i - 1/2)*single_width
     print(SexLocation)
-    
+
     #绘制柱状图
     plt.bar(SexLocation,SexCount,width = single_width)
     for x,y in zip(SexLocation,SexCount):
@@ -1042,7 +1042,7 @@ for i in range(Survived_len):
 index = Sex_index * 1.05
 plt.xticks(index,Sex_Survived.index,rotation = 360)
 plt.title('Survived status by sex')
-    
+
 ```
 
     2
@@ -1268,7 +1268,7 @@ train = df_train.copy()
 
 
 ```python
-train['Embarked'] = train['Embarked'].fillna(train['Embarked'].mode()[0]) 
+train['Embarked'] = train['Embarked'].fillna(train['Embarked'].mode()[0])
 # 0 or index :获取列的众数；1 or columns ：获取行的众数
 ```
 
